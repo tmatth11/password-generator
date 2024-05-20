@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="icon.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Random Password Generator</title>
+</head>
+<body>
+
+    <h1>Random Password Generator</h1>
+
+    <form>
+            <div class="form-field">
+                <label for="amount">Number of Passwords to Generate (1-10 passwords):</label>
+                <input type="number" id="amount" name="amount" min="1" max="10">
+            </div>
+    
+            <div class="form-field">
+                <label for="length">Password Length (5-20 characters):</label>
+                <input type="number" id="length" name="length" min="5" max="20">
+            </div>
+    
+            <div class="form-field">
+                <label for="uppercase" id="checkbox-label">Uppercase Characters:</label>
+                <input type="checkbox" id="uppercase" name="uppercase" value="uppercase">
+            </div>
+
+            <div class="form-field">
+                <label for="lowercase" id="checkbox-label">Lowercase Characters:</label>
+                <input type="checkbox" id="lowercase" name="lowercase" value="lowercase">
+            </div>
+    
+            <div class="form-field">
+                <label for="numbers" id="checkbox-label">Numbers:</label>
+                <input type="checkbox" id="numbers" name="numbers" value="numbers">
+            </dov>
+    
+            <div class="form-field">
+                <label for="symbols" id="checkbox-label">Symbols:</label>
+                <input type="checkbox" id="symbols" name="symbols" value="symbols">
+            </div>
+
+        <button type="submit">Generate Password(s)</button>
+
+        <div id="passwords">
+    
+        </div>
+    </form>
+
+
+    <script src="index.js"></script>
+</body>
+</html>
